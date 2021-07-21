@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+        function add(){
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c=a+b;
+            document.getElementById("answer").value=c;
+            document.getElementById("answer").style.color="blue";
+        }
+        function sub(){
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c=a-b;
+            document.getElementById("answer").value=c;
+            document.getElementById("answer").style.color="red";
+        }
+        function mul(){
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c=a*b;
+            document.getElementById("answer").value=c;
+            document.getElementById("answer").style.color="green";
+        }
+        function div(){
+            var a,b,c;
+            a=Number(document.getElementById("first").value);
+            b=Number(document.getElementById("second").value);
+            c=a/b;
+            document.getElementById("answer").value=c;
+            document.getElementById("answer").style.color="darkgoldenrod";
+        }
+    </script>
+<body>
+ <div class="wrap">
+    <div class="cal">
+        <h2>CALCULATOR</h2>
+        <input type="text" id="first" placeholder="FIRST NUMBER"><br>
+        <input type="text" id="second" placeholder="SECOND NUMBER"><br>
+        <button onclick=add() class="btn btn-outline-primary">+</button>
+        <button onclick=sub() class="btn1 btn-outline-danger">-</button>
+        <button onclick=mul() class="btn2 btn-outline-success">×</button>
+        <button onclick=div() class="btn3 btn-outline-warning">÷</button><br>
+        <input id="answer" placeholder="ANSWER"><br>
+    </div>
+</div>
+</body>
+</html>
